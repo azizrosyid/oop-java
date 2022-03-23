@@ -118,7 +118,7 @@ public class ProgramCuboidCalculator implements ActionListener {
 
                 resultText.setText(dataResult);
             } catch (NumberFormatException error) {
-                JOptionPane.showMessageDialog(frame, "Format Tidak Sesuai",
+                JOptionPane.showMessageDialog(frame, "Format Tidak Sesuai\nerror : " + error.getMessage(),
                         "Peringatan", JOptionPane.WARNING_MESSAGE);
             }
 
